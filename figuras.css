@@ -1,0 +1,257 @@
+ * {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.container {
+    margin: 1%;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(173, 51, 51);
+    border: 5px solid midnightblue;
+    border-radius: 50px;
+    text-align: center;
+
+}
+/* para ajustar un texto a cierto parte despues de que seuse un dysplayflex es usar un justify 
+content y esecificar donde quiere que se centre el contenido*/
+footer{
+    background-color: rgb(173, 51, 51);
+    height: 80px;
+    text-align: center;
+}
+footer h3{
+    padding-top: 2%;
+    color: midnightblue;
+}
+.menu{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    justify-content: center;
+    /*esta parte decodigopermite define cómo el navegador distribuye el espacio entre y alrededor 
+    de los items flex, a lo largo del eje principal de su contenedor.*/
+    align-items: center;
+    display: flex;
+}
+.menu b {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.menu a{
+    margin-left: 20px;
+    color: cornflowerblue;
+    border: 3px solid darkblue;
+    background-color: darkred;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+.menu li{
+    list-style: none;
+}
+.body{
+    background-color: rgb(123, 212, 212);
+    text-align: center;
+    color: red;
+}
+
+#circulo {
+    /*para ajustar el ancho de la figura*/
+    width: 200px;
+    /*para ajustar el alto de la figura*/
+    height: 200px;
+    /*para ajustas la fifura y que sea un circulo*/
+    border-radius: 70%;
+    background: #19c3cf;
+    border: 5px solid #555;
+    margin-left: 43%;
+     /*elwebkit sirve para cofigurar que en la caracteristica de la pagina en especifico funcione 
+    en distintos operadores con crome y lo mismo con moz pero con mozila fireox*/
+    box-shadow:  11px 11px 11px 0px black;
+    -webkit-box-shadow: 11px 11px 11px 0px black;
+    -moz-box-shadow: 11px 11px 11px 0px black;
+}
+#cuadrado {
+    width: 200px; 
+    height: 200px; 
+    background: rgb(226, 223, 21);
+    border: 5px solid darkgoldenrod;
+    margin-left: 43%;
+    box-shadow:  11px 11px 11px 0px black;
+    -webkit-box-shadow: 11px 11px 11px 0px black;
+    -moz-box-shadow: 11px 11px 11px 0px black;
+}
+#cuadrado-tricolor {
+    /*en este caso aunque nomodifican directamente a la figura lo que hacen es limitala, ya 
+    que sin estos la figura se extendera hasta el limite de la pagina*/
+    width: 0; 
+     height: 0; 
+    /*NOTA IMPORTANTE: uno al insertar el triangulo deben de ser consecutivos, como asi,
+    osea que no pueden estar un triangulo arriba y uno abajo sin uno al lado que los 
+    complemente*/
+    /*si un triangulo no tiene su opuesto su tamaño no importa mucho ya que queda a merced 
+    de los otros 2 en lo alto pero no en lo ancho */
+    /*este permite insertar un triangulo en la parte lateral izquierda*/
+    border-left:200px solid #094070;
+    /*este permite insertar un triangulo en la parte lateral derecha*/
+    /*este permite insertar un triangulo en la parte superior*/
+    border-top: 100px solid #d3e90b;
+    /*este permite insertar un triangulo en la parte inferior*/
+    border-bottom: 100px solid #089e41; 
+    margin-left: 43%;
+    box-shadow:  11px 11px 11px 0px black;
+    -webkit-box-shadow: 11px 11px 11px 0px black;
+    -moz-box-shadow: 11px 11px 11px 0px black;
+}
+#pac-man {
+    /*IMPORTANTE: en este caso el circulo no puede tener faltante ninguna especificacion de 
+    lado debido a que sin una de estas no funcionaria su frontal, como por ejemplo si no se 
+    pone la de arriba no aparecera la de abajo*/
+    width: 0; 
+     height: 0;
+    border-right: 100px solid transparent;
+    border-top: 100px solid #cf0e58;
+    border-left: 100px solid #6bb34a;
+    border-bottom:100px solid #19c3cf ;
+    border-radius: 100%;
+    margin-left: 43%;
+    
+    
+}
+/*En las figuras que tiene varios colores en misma figura, osea basicamene como el cuadrado y
+ circulo tricolor si el ancho y alto se alteran se forma un hueco en el centro de las 4 o 3 
+ caras de la figura*/
+#rombo-cuadrado {
+    width: 200px; 
+    height: 200px; 
+    border: 3px solid rgb(226, 19, 19); 
+    background: #f0870f;
+    /*la funcion de transform agregandole el rotate nos permite a la figura girarla lo que queramos
+    comoen este ejemplo que esbasicamente uncuadrado volteado*/
+    transform: rotate(45deg);
+    margin-left: 43%;
+    box-shadow:  11px 11px 11px 0px black;
+    -webkit-box-shadow: 11px 11px 11px 0px black;
+    -moz-box-shadow: 11px 11px 11px 0px black;
+}
+#rombo {
+    width: 100px; 
+    height: 100px; 
+    border: 3px solid rgb(233, 56, 65); 
+    background: #046815;
+    transform: rotate(45deg) skew(15deg, 15deg);
+    margin-left: 46%;
+    box-shadow:  11px 11px 11px 0px black;
+    -webkit-box-shadow: 11px 11px 11px 0px black;
+    -moz-box-shadow: 11px 11px 11px 0px black;
+    /*lafuncion de skrew sirve para modificar la figura diretamente y hacerla tener unos 
+    puntos deunion distintos, osea quemodifica sus angulos y deg es para definir el angulo */
+}
+#paralelogramo{
+    width: 150px; 
+    height: 100px; 
+    border: 3px solid rgb(219, 223, 8); 
+    background: #0c4980;
+    margin-left: 45%;
+    transform: skew(40deg);
+    box-shadow:  11px 11px 11px 0px black;
+    -webkit-box-shadow: 11px 11px 11px 0px black;
+    -moz-box-shadow: 11px 11px 11px 0px black;
+}
+#trapecio1{
+    width: 250px;
+    height: 0px;
+    border-right: 90px solid transparent;
+    border-left: 90px solid transparent;
+    border-bottom: 100px solid #16035c;
+    margin-left: 34%;
+}
+/*basicamente un trapecio sigue la mismalogica de un cuadrado tricolor solo 
+que 2 son transparentes haciendo que se vea como trapecio*/
+#trapecio2{
+    width: 250px;
+    height: 0px;
+    border-right: 115px solid transparent;
+    border-left: 115px solid transparent;
+    border-top: 100px solid #18bb49;
+    margin-left: 33%;
+}
+#triangulo{
+    width: 0; 
+    height: 0; 
+    border-left: 200px solid #91590b;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    margin-left: 43%;
+}
+#triangulo2{
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-top: 100px solid transparent;
+    border-left: 100px solid #0bb460;
+    border-bottom: 100px solid #0bb460;
+    margin-left: 45%; 
+}
+#triangulo3{
+    width: 0;
+    height: 0;
+    border-right: 50px solid transparent;
+    border-top: 50px solid transparent;
+    border-left: 50px solid transparent;
+    border-bottom: 50px solid #693f05;
+    margin-left: 46%;
+}
+#ovalo{
+    width: 150px;
+    height: 75px;
+    border-radius: 80%;
+    background: #382ab6;
+    margin-left: 44%;
+    box-shadow:  11px 11px 11px 0px black;
+    -webkit-box-shadow: 11px 11px 11px 0px black;
+    -moz-box-shadow: 11px 11px 11px 0px black;
+}
+#hoja{
+    width: 250px;
+    height: 100px;
+    border-radius: 0 100% / 0 200%;
+    /*aqui lo que hace la primera el alterar lo recto del alto dela figura,osea las lineas vertiales
+    para que sean mas verticales o curvadas y el segundo hace lo mismo pero con las horizontales*/
+    background: #33c407;
+    border: 3px solid rgba(1, 14, 3, 0.664);
+    margin-left: 40%;
+    box-shadow:  11px 11px 11px 0px black;
+    -webkit-box-shadow: 11px 11px 11px 0px black;
+    -moz-box-shadow: 11px 11px 11px 0px black;
+}
+#huevo{
+    width: 216px;
+    height: 280px;
+    background-color: #0a5863;
+    border-radius: 50% 50% 40% 40% / 60% 60% 40% 40%;
+    margin-left: 42%;
+    box-shadow:  11px 11px 11px 0px black;
+    -webkit-box-shadow: 11px 11px 11px 0px black;
+    -moz-box-shadow: 11px 11px 11px 0px black;
+}
+/*la primera parteesparalterar las esquinasy que parezcan bulbitos y la otraes para alterar todos
+las esquinas y no solo una como enel otro*/
+#luna{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    box-shadow: 60px 20px 0 #9e1612;
+    margin-left: 37%;
+}
+
+#ribbon{
+    width: 0px;
+    height: 200px;
+    border-left: 110px solid #003046;
+    border-right: 110px solid #003046;
+    border-bottom: 120px solid transparent;
+    margin-left: 42%;
+    
+}
